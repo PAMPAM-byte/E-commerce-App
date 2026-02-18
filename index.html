@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>PAM PAM Store</h1>
+    <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<main>
+    <section class="products" id="product-list"></section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total: $<span id="total">0</span></h3>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+</main>
+
+<!-- Fake Checkout Modal -->
+<div class="modal" id="checkout-modal">
+    <div class="modal-content">
+        <h2>Checkout</h2>
+        <p>This is a demo checkout page.</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
